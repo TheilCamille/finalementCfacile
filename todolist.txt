@@ -1,22 +1,16 @@
-To do list Tuko V3.0 : 
+Preview : https://htmlpreview.github.io/?https://github.com/TheilCamille/finalementCfacile/blob/master/index.html#footer
 
+To do list: 
 
-. Commencer à rédiger un peu de contenu
+. Commencer Ã  rÃ©diger un peu de contenu
 
 . Purifier le style.css de tout ce qui est inutile
 
-. scroll link
-
-
-
-
-
 Done so quick : 
 
+. RÃ©gler le slider (relire la doc) => Chercher un autre script ?
 
-. Régler le slider (relire la doc) => Chercher un autre script ?
-
-. Définir les sections 
+. DÃ©finir les sections 
 
 . Definir un corp (let's flex !)
 
@@ -28,4 +22,6 @@ Done so quick :
 
 . fixed nav
 
-. Ralentir légerement le slider
+. Ralentir lÃ©gerement le slider
+
+. scroll link
