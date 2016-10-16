@@ -1,0 +1,31 @@
+To do list Tuko V3.0 : 
+
+
+. Commencer à rédiger un peu de contenu
+
+. Purifier le style.css de tout ce qui est inutile
+
+. scroll link
+
+
+
+
+
+Done so quick : 
+
+
+. Régler le slider (relire la doc) => Chercher un autre script ?
+
+. Définir les sections 
+
+. Definir un corp (let's flex !)
+
+. footer
+
+. Section Skype
+
+. favicon
+
+. fixed nav
+
+. Ralentir légerement le slider
