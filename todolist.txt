@@ -1,4 +1,4 @@
-Preview : [Clik here](https://htmlpreview.github.io/?https://github.com/TheilCamille/finalementCfacile/blob/master/index.html#footer)
+Preview : https://htmlpreview.github.io/?https://github.com/TheilCamille/finalementCfacile/blob/master/index.html#footer
 
 To do list: 
 
