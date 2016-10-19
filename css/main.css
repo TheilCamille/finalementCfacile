@@ -1,0 +1,181 @@
+/* Fueille de style "Screen" */
+
+/* Css for JavaScript */
+
+.fixed{                     
+    z-index: 9999;
+    position: fixed;            /* To fix main menu container */
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+/* Slider */
+
+.cd-full-width h2 {
+    color: red;
+}
+.cd-full-width p {
+    color: red;
+}
+/* Main */
+
+main div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 60px;
+    
+    border-bottom: 2px black ridge;
+    border-top: 2px black ridge;
+    background-color: #6E6E6E;
+}
+h5 {
+    font-family: 'Kristi', cursive;
+    font-size: 29px;  
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;    
+}
+
+
+textarea {
+    height: 12em;
+    width:  25em;
+    
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+   background-color: gainsboro;
+    border-top: 1px black ridge;
+}
+
+/* la purification s'arrete ici */
+.conteneur {
+    display: flex;
+    justify-content: center;
+    
+    background-color: white;   
+}
+
+.contenu {
+    height: 6000px;
+    margin: 50px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+#facebook {
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+}
+
+
+.liste {
+    align-self: flex-end;
+    margin: 12px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
+
+
+#realformulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+input {
+    margin: 5px;
+}
+textarea {
+    margin: 5px;
+}
+
+
+#tarif2 {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+#tarif {
+    height: 100px;
+}
+
+.lien {
+    color: crimson;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 250px;
+    border: 1px black ridge;
+    border-radius: 7px;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: gainsboro;
+}
+
+.info p {
+    margin-top: 15px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+    
+    
+}
+
+/* Media Querie */
+@media screen and (min-width: 50px) and (max-width: 640px) {
+    .liste {
+        font-size: 12px;   
+    }
+    #facebook {
+        height: 25px;
+        width: 25px;
+    }
+    #SkypeButton_Call_spataro.lucas_1 {
+        height: 25px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

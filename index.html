@@ -12,13 +12,15 @@
         <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
         <!-- Google Fonts -->
         <link rel="stylesheet" href="css/reset.css"> <!-- CSS Reset -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"> <!-- CSS Hero Slider -->
+        <link rel="stylesheet" href="css/main.css"> <!-- CSS Horscontexte -->
         <link rel="icon" type="image/png" href="./assets/ico.png" />
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
     
         <title>Finalement c'est facile !</title>
     </head>
     <body>
+            <!-- Début du Hero Slider -->
         <section class="cd-hero">
            <ul class="cd-hero-slider autoplay">
                 <li class="selected">
@@ -39,10 +41,10 @@
                </li>
             </ul>
         </section>
+                <!-- Fin du Hero Slider -->
         <main>
-            <div id="test">
-            <div class="deco2">
-                <a href="page2.htm"><img id="facebook" src="./assets/bouton_facebook.png" alt="Facebook"></a><!-- bouton Facebook -->
+            <div class=navigation> <!-- Class utilisé dans fixed.js -->
+                <a href="page2.htm"><img id="facebook" src="./assets/bouton_facebook.png" alt="Facebook"></a> <!-- bouton Facebook -->
                 <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
                 <div id="SkypeButton_Call_spataro.lucas_1">
                     <script type="text/javascript">
@@ -53,44 +55,80 @@
                             "imageSize": 32
                         });
                     </script>
-               </div><!-- bouton skype -->
-                <div id="navnav">
+               </div> <!-- bouton skype -->
+               <div >
                     <nav>
-                        <ul class="nav">
-
-                            <li class="liste"><a href="#0">Présentation</a></li>
-				            <li class="liste"><a href="#0">CV</a></li>
-				            <li class="liste"><a href="#0">Tarif / Localisation</a></li>
+                        <ul>
+                                        <!-- On règle les ancres ici -->
+                            <li class="liste"><a href="#navnav">Présentation</a></li>
+				            <li class="liste"><a href="#0">Parcours</a></li>
+                            <li class="liste"><a href="#0">Localisation</a></li>
+				            <li class="liste"><a href="#tarif">Tarif</a></li>
                             <li class="liste"><a href="#footer">Contact</a></li>
                 
                         </ul>
                     </nav>
                 </div>
             </div>
-            </div>
-            <div class="contenu">
-                <section id="formulaire">
-                    <p><form name="formulaire" method="post" action="traitement.php">
-                    Nom<br/>
-                    <input type="text" name="nom"/><br/>
-                    Prénom<br/>
-                    <input type="text" name="prenom"/><br/>
-                    Email<br/>
-                    <input type="text" name="mail"/><br/>
-                    Classe / Niveau scolaire souhaité<br/>
-                    <input type="text" name="classe"/><br/>
-                    <textarea name="message" rows="10" cols="50">Veuillez saisir votre message ici.</textarea><br/>
-                    <input type="submit" name="valider" value="Envoyer"/>
-                    </form>
-                </section>    
+            
+            <div class="contenu" id="contenu">
+                
+                <div id="tarif">
+                </div>
+                <section id="tarif2">
+                    <h4>Moyen de paiement et avantage fiscal :</h4>
+                    <p>Le moyen de paiement utilisé est le chèque emploi service universel (CESU) déclaratif. Il offre un crédit d’impôt à hauteur de 50% des sommes dépensées (salaire + cotisations).</p>
+                    <p> Cet avantage fiscal permet de rembourser un peu plus que les charges.</p>
+                    <h4>Exemple :</h4>
+                    <p>Pour 6h (environ un mois) de cours particulier niveau lycée à un tarif horaire direct de 30€ :</p>
+                    <ul>
+                        <li>Vous payez 6 x 30€ = 180€ au professeur.</li>
+                        <li>Vous payez 142€ de cotisations à l’URSSAF.</li>
+                        <li>Vous avez droit à un crédit d’impôt à hauteur de 50% de ces 322€, soit 161€ d’avantage fiscal.</li>
+                        <li>Les 6h de cours vous coûtent finalement à 180 + 142 – 161 = 161€.</li>
+                    </ul>
+                    <p>Après paiement des cotisations et crédit d’impôt, le tarif horaire final est de 27€.</p>
+                    <h4>Utilisation : </h4>
+                    <p>Le CESU déclaratif est très simple d’utilisation. Il suffit de payer le professeur en chèque ou en espèces, puis de déclarer cette somme sur le site en ligne du CESU. Les cotisations sont calculées automatiquement.</p>
+                    <h4>Pour plus d'information je vous invite à visiter les liens suivant :</h4>
+                    <ul>
+                        <li>Site officiel des chèques emploi service universels, rubrique CESU déclaratifs : 
+                            <a href="http://www.cesu.urssaf.fr/cesweb/ces2.jsp" class="lien" target="_blank">Cesu.urssaf.fr</a></li>
+                        <li>Simulateur des cotisations et de l’avantage fiscal :
+                            <a href="http://www.cesu.urssaf.fr/cesweb/simucoti1.jsp" class="lien" target="_blank">Simulateur</a></li>
+                        <li>Plus d'info sur les déductions :
+                            <a href="http://www.impots.gouv.fr/portal/static/part/qr/themes/deductions.html" class="lien" target="_blank">impots.gouv.fr</a></li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <form name="formulaire" method="post" action="traitement.php" id="realformulaire">
+                        <label>Nom</label>
+                        <input type="text" name="nom"/>
+                        <label>Prénom</label>
+                        <input type="text" name="prenom"/>
+                        <label>Email</label>
+                        <input type="text" name="mail"/>
+                        <label>Classe</label>
+                        <input type="text" name="classe"/>
+                        <label>Ville</label>
+                        <input type="text" name="ville"/>
+                        <textarea name="message" placeholder="Je suis à votre disposition pour toute information suplémentaire."></textarea>
+                        <input type="submit" name="valider" value="Envoyer"/>
+                    </form>  <!-- Formulaire de contact -->
+                    <section class="info">
+                    <p>Télephone : <a class="lien" href="tel:+33#">06.XX.XX.XX.XX</a></p>
+                    <p>Mail : <a class="lien" href="mailto:xxx@xxx.fr">xxx@xxx.fr</a></p>
+                    <p>Skype : spataro.lucas</p>
+                    </section>
+                </section>
             </div>
         </main>
         <footer id="footer">
             <h5>2016-2017 ©Horscontexte
             </h5>
         </footer>
-        <script src="js/jquery-2.1.1.js"></script><!-- Resource jQuery -->
-        <script src="js/main.js"></script><!-- Slider jQuery -->
-        <script src="js/fixed.js"></script>
+        <script src="js/jquery-2.1.1.js"></script> <!-- Resource jQuery -->
+        <script src="js/main.js"></script> <!-- Slider jQuery -->
+        <script src="js/fixed.js"></script> <!-- Fixed nav -->
     </body>
 </html>
