@@ -58,9 +58,9 @@
                     <nav>
                         <ul class="nav">
 
-                            <li class="liste"><a href="#navnav">Présentation</a></li>
+                            <li class="liste"><a href="#0">Présentation</a></li>
 				            <li class="liste"><a href="#0">CV</a></li>
-				            <li class="liste"><a href="#tarif">Tarif / Localisation</a></li>
+				            <li class="liste"><a href="#0">Tarif / Localisation</a></li>
                             <li class="liste"><a href="#footer">Contact</a></li>
                 
                         </ul>
@@ -68,53 +68,19 @@
                 </div>
             </div>
             </div>
-            <div class="contenu" id="contenu">
-                <div id="tarif">
-                </div>
-                <section id="tarif2">
-                    <h4>Moyen de paiement et avantage fiscal :</h4>
-                    <p>Le moyen de paiement utilisé est le chèque emploi service universel (CESU) déclaratif. Il offre un crédit d’impôt à hauteur de 50% des sommes dépensées (salaire + cotisations).</p>
-                    <p> Cet avantage fiscal permet de rembourser un peu plus que les charges.</p>
-                    <h4>Exemple :</h4>
-                    <p>Pour 6h (environ un mois) de cours particulier niveau lycée à un tarif horaire direct de 30€ :</p>
-                    <ul>
-                        <li>Vous payez 6 x 30€ = 180€ au professeur.</li>
-                        <li>Vous payez 142€ de cotisations à l’URSSAF.</li>
-                        <li>Vous avez droit à un crédit d’impôt à hauteur de 50% de ces 322€, soit 161€ d’avantage fiscal.</li>
-                        <li>Les 6h de cours vous coûtent finalement à 180 + 142 – 161 = 161€.</li>
-                    </ul>
-                    <p>Après paiement des cotisations et crédit d’impôt, le tarif horaire final est de 27€.</p>
-                    <h4>Utilisation : </h4>
-                    <p>Le CESU déclaratif est très simple d’utilisation. Il suffit de payer le professeur en chèque ou en espèces, puis de déclarer cette somme sur le site en ligne du CESU. Les cotisations sont calculées automatiquement.</p>
-                    <h4>Pour plus d'information je vous invite à visiter les liens suivant :</h4>
-                    <ul>
-                        <li>Site officiel des chèques emploi service universels, rubrique CESU déclaratifs : 
-                            <a href="http://www.cesu.urssaf.fr/cesweb/ces2.jsp" class="lien">Cesu.urssaf.fr</a></li>
-                        <li>Simulateur des cotisations et de l’avantage fiscal :
-                            <a href="http://www.cesu.urssaf.fr/cesweb/simucoti1.jsp" class="lien">Simulateur</a></li>
-                        <li>Plus d'info sur les déductions :
-                            <a href="http://www.impots.gouv.fr/portal/static/part/qr/themes/deductions.html" class="lien">impots.gouv.fr</a></li>
-                    </ul>
-
- 
-
-
-
-
-                
-                </section>
+            <div class="contenu">
                 <section id="formulaire">
-                    <form name="formulaire" method="post" action="traitement.php" id="realformulaire">
-                        <p>Nom</p>
-                        <input type="text" name="nom"/>
-                        <p>Prénom</p>
-                        <input type="text" name="prenom"/>
-                        <p>Email</p>
-                        <input type="text" name="mail"/>
-                        <p>Classe</p>
-                        <input type="text" name="classe"/>
-                        <textarea name="message" placeholder="Si vous avez une question n'hésitez pas, j'y répondrais dans les plus brefs délais. " rows="10" cols="50" ></textarea>
-                        <input type="submit" name="valider" value="Envoyer"/>
+                    <p><form name="formulaire" method="post" action="traitement.php">
+                    Nom<br/>
+                    <input type="text" name="nom"/><br/>
+                    Prénom<br/>
+                    <input type="text" name="prenom"/><br/>
+                    Email<br/>
+                    <input type="text" name="mail"/><br/>
+                    Classe / Niveau scolaire souhaité<br/>
+                    <input type="text" name="classe"/><br/>
+                    <textarea name="message" rows="10" cols="50">Veuillez saisir votre message ici.</textarea><br/>
+                    <input type="submit" name="valider" value="Envoyer"/>
                     </form>
                 </section>    
             </div>
